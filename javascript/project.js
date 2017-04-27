@@ -1,16 +1,24 @@
-/* Function for the Navigation Bar - Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+/* Display Date function */
+window.onload = function() {
+	var myDate = new Date();
+	options = { weekday: "long", month: "short", day: "numeric", year: "numeric" };
+	myDate = myDate.toLocaleString("en-IRL", options);
+	document.getElementById("todayDay").innerHTML = myDate;
+} 
+
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
         x.className += " responsive";
-    } else {
+		} else {
         x.className = "topnav";
-    }
+	}
 }
 
-/* Slideshow function*/
-(function() {
-	
+
+
+(function() {	
 	function Slideshow( element ) {
 		this.el = document.querySelector( element );
 		this.init();
@@ -75,3 +83,14 @@ function myFunction() {
 	
 	
 })();
+
+
+function validateEMail() {
+    var input = document.forms["contactForm"]["customerEmail"].value;
+    var dot = input.lastIndexOf(".");
+	var at = input.indexOf("@");
+    if (at<1 || dot<at+2 || dot+2>=input.length) {
+        alert("Enter valid e-mail address");
+        return false;
+	}
+}

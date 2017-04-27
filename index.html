@@ -6,7 +6,8 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<!-- A viewport meta tag should make the web site work on all devices and screen resolutions -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- CSS should take care of all our styling needs and all device and browser differences -->
+		<!-- Add external CSS -->
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 		<link rel="stylesheet" href="css/project.css" type="text/css">
 		<!-- Add icon library for facebook, twitter etc -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,6 +20,9 @@
    			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		
+		<!-- Internal Javascript to manage current date display -->
+		
+		
 	</head>
 	<body>
 		<!-- Navigation -->
@@ -28,17 +32,24 @@
 			<a href="pages/services.html">Services</a>
 			<a href="pages/gallery.html">Gallery</a>
 			<a href="pages/contact.html">Contact Us</a>
-			<img class="logo-img" src="images/JOCLogo.png" ALT="logo">
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+			<img class="logo-img" src="images/JOCLogo.png" alt="logo">
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>	
+			
+			<p id="todayDay" class="right"></p>
+			
+			
 		</div>
-		
-		
 		<h2>JOC Landscape Design</h2>
 		<h3>"Designing for Society"</h3>
 		
 		<div class="text">
 			<p>
 			We provide professional and affordable services to clients in the Dublin area. Leave worry out of the equation by taking advantage of our Landscaping Service, and letting the experts handle it. We would love the opportunity to work with you and show why our exceptional service sets us apart from the rest of the field.</p>
+		</div>
+		
+		<div class="textcenter">
+			<p>
+			 <b>CALL US NOW</b> FOR A FREE QUOTATION ON <b>123-456-7890</b></p>
 		</div>
 		
 		<!-- Slide Show -->
@@ -59,10 +70,10 @@
 			<a href="#"><i class="fa fa-flickr"></i></a>
 			<a href="#"><i class="fa fa-linkedin"></i></a>
 			<div class="footer-contact-details">
-				<p>Powered by <a href="https://www.joclandscapedesign.com" target="_blank">JOC Landscape Design</a>
+				<p>Powered by <a href="https://joclandscapedesign.gear.host/" target="_blank">JOC Landscape Design</a>
 					<br>
 				info@joclandscapedesign.com Tel: 123-456-7890 Fax: 123-456-7891 Address: Damastown Industrial Park, Dublin, Ireland</p>
 			</div>
 		</footer>
 	</body>
-</html>							
+</html>									
